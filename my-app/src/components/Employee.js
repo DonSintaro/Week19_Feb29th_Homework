@@ -10,7 +10,7 @@ console.log(props);
         <ul className="content">
             <div className="TableHead">
                 <div className="tab noHoverHead">Image</div>
-                <div className="tab contentHead">Name</div>
+                <div className="tab contentHead" onClick={props.handleSort}>Name</div>
                 <div className="tab noHoverHead">Phone</div>
                 <div className="tab contentHead">Email</div>
                 <div className="tab contentHead">DOB</div>
