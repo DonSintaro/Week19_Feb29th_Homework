@@ -54,9 +54,10 @@ class GroupEmployee extends Component {
 
     handleSort = () => {
 
+        var sortedA
         
         if(this.state.sorted){
-        var sortedA = (this.state.results).sort((a,b) => ((a.name.first + " " + a.name.last) > (b.name.first + " " + b.name.last) ? 1 : -1));
+            sortedA = (this.state.results).sort((a,b) => ((a.name.first + " " + a.name.last) > (b.name.first + " " + b.name.last) ? 1 : -1));
 
         this.setState({
             sorted:false
@@ -64,7 +65,7 @@ class GroupEmployee extends Component {
         
         }
         else{
-            var sortedA = (this.state.results).sort((a,b) => ((b.name.first + " " + b.name.last) > (a.name.first + " " + a.name.last) ? 1 : -1));
+            sortedA = (this.state.results).sort((a,b) => ((b.name.first + " " + b.name.last) > (a.name.first + " " + a.name.last) ? 1 : -1));
 
         this.setState({
             sorted:true
